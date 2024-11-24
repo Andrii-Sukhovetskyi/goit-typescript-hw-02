@@ -1,6 +1,6 @@
 import ImageCard from "../ImageCard/ImageCard";
 import s from "./ImageGallery.module.css";
-import { Image } from "../types";
+import { Image } from "../../types";
 
 type Props = {
   images: Image[];

@@ -40,14 +40,14 @@ function App() {
     setPage((prevPage) => prevPage + 1);
   };
 
-  const handleSetQuery = (searchQuery) => {
+  const handleSetQuery = (searchQuery: string) => {
     if (searchQuery.toLowerCase() === query.toLowerCase()) return;
     setQuery(searchQuery);
     setImages([]);
     setPage(1);
   };
 
-  const openModal = (image) => {
+  const openModal = (image: Image) => {
     setModal(true);
     setSelectedImage(image);
   };
