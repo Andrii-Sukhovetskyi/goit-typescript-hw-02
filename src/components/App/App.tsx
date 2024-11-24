@@ -10,12 +10,12 @@ import { Image } from "../../types";
 
 function App() {
    const [images, setImages] = useState<Image[]>([]);
-  const [query, setQuery] = useState("");
-  const [page, setPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(0);
-  const [loader, setLoader] = useState(false);
-  const [error, setError] = useState(false);
-  const [modal, setModal] = useState(false);
+  const [query, setQuery] = useState<string>("");
+  const [page, setPage] = useState<number>(1);
+  const [totalPages, setTotalPages] = useState<number>(0);
+  const [loader, setLoader] = useState<boolean>(false); 
+  const [error, setError] = useState<boolean>(false);
+  const [modal, setModal] = useState<boolean>(false);
   const [selectedImage, setSelectedImage] = useState<Image | null>(null);
 
   useEffect(() => {
@@ -69,7 +69,7 @@ function App() {
             closeModal={closeModal}
             image={selectedImage}
           />
-          {page < totalPages && <LoadMoreBtn handleLoadMore={handleLoadMore} />}
+          {loader ? (<Loader />) : (page < totalPages && <LoadMoreBtn handleLoadMore={handleLoadMore} />)}
         </>
       )}
     </>

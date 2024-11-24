@@ -1,7 +1,10 @@
 .header {
   margin-bottom: 20px;
-  background-color: #4169e1;
-  padding: 10px;
+  background: linear-gradient(90deg, #4caf50, #009688);
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: white;
 }
 
 .input {
@@ -9,6 +12,7 @@
   margin: 0 auto;
   padding: 8px;
   width: 90%;
+  border-radius: 8px;
 }
 
 .input:focus {
