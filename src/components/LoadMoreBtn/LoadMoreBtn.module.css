@@ -1,0 +1,22 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 40px;
+  width: 200px;
+  height: 45px;
+  background-color: #4169e1;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  line-height: 20px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:hover {
+  background-color: rgba(6, 27, 160, 0.9);
+}
